@@ -64,7 +64,13 @@ namespace Atomic.UI.Element
                         frameheight = Height;
                     }
 
+                    // Draw the image from FFmpeg
                     e.Graphics.DrawImage(ResizeImage(bmp, framewidth, frameheight), 0, 0);
+
+                    // Draw the graphics from ASS script
+                    //Bitmap assbmp = CSASS.ASSNeo.Core.RenderNeoASS(ca, 120000L);
+                    //e.Graphics.DrawImage(ResizeImage(assbmp, framewidth, frameheight), 0, 0);
+
                 }
                 catch (Exception)
                 {

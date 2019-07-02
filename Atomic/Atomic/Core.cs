@@ -135,7 +135,7 @@ namespace Atomic
                 if (VideoFile != null && VideoFile.Count > 0)
                 {
                     if(vev.Core == null)
-                    {                        
+                    {
                         MI = new MediaInfoWrapper(VideoFile[0]);
                         vev.Core = this;
                     }
